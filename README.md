@@ -5,6 +5,7 @@ Auf dem Raspberry per Remote VS-Code
 ```shell
 sudo pip3 install bluepy
 ```
+[Bluepy Dokumentation](https://ianharvey.github.io/bluepy-doc/)
 
 Damit der Zugriff auf die BLE Hardware möglich ist muss der Python-Code als superuser ausgeführt werden.
 Dafür muss eine 'launch.json' Datei erstellt werden und in dieser Datei die Konfiguration "sudo" auf "true" gestellt werden.

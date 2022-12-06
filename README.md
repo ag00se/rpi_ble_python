@@ -38,7 +38,7 @@ sudo apt-get install bluez-hcidump
 ```
 ## Beispiel
 
-Die grundlegende Verwendung des ```bluepy``` Modules wird in der Datei [startup.py]((https://github.com/ag00se/rpi_ble_python/blob/master/startup.py)) veranschaulicht. Die oben verlinkte [Dokumentation](https://ianharvey.github.io/bluepy-doc/) beschreibt die weitere Verwendung des Moduls.
+Die grundlegende Verwendung des ```bluepy``` Modules wird in der Datei [startup.py](https://github.com/ag00se/rpi_ble_python/blob/master/startup.py) veranschaulicht. Die oben verlinkte [Dokumentation](https://ianharvey.github.io/bluepy-doc/) beschreibt die weitere Verwendung des Moduls.
 
 Im Allgemeinen kann mit einem ```Scanner```-Objekt die Suche nach BLE-Geräten gestartet werden. (Zeile 21) Über eine eigene Klasse, welche von der Klasse ```DefaultDelegate``` erbt, kann durch Überschreiben der Methode ```def handleDiscovery(self, scanEntry, isNewDev, isNewData):``` benutzerdefiniertes Verhalten beim Auffinden eines neuen Geräts ausgeführt werden. (Zeilen 3-9) Ebenso werden die gefundenen Geräte direkt beim Aufruf der ```scan``` Methode des Scanners zurückgegeben. (Zeile 22)
 
